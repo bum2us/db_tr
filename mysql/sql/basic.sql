@@ -16,7 +16,7 @@ VALUES(
     );
 
 -- 전체 컬럼 조회
-SELECT * FROM maplestory.member2;
+-- SELECT * FROM maplestory.member2;
 
 CREATE TABLE IF NOT EXISTS maplestory.member2(
 	`seq`	INT NOT NULL AUTO_INCREMENT,
@@ -44,6 +44,12 @@ PRIMARY KEY(`seq`))
 
 -- 값 업데이트
 UPDATE maplestory.member2 SET 
-id="바꿔봅시다",
-name="홍길동"
-WHERE seq = 4;
+id="lkii2",
+age = 34
+WHERE seq = 7;
+
+-- 셀렉트 BETWEEN
+-- SELECT * FROM maplestory.member2 WHERE age BETWEEN 19 and 30
+
+-- 셀렉트 IS NULL
+-- SELECT * FROM maplestory.member2 WHERE nickname IS null
