@@ -53,3 +53,13 @@ WHERE seq = 7;
 
 -- 셀렉트 IS NULL
 -- SELECT * FROM maplestory.member2 WHERE nickname IS null
+
+-- 값이 비어있을경우에 대비해 디폴트 값을 설정할 수 있다.
+-- CREATE TABLE maplestory.post2(
+-- `seq` INT NOT NULL AUTO_INCREMENT,
+--    `createTime` TIMESTAMP NOT NULL DEFAULT NOW(),
+--    `title` VARCHAR(45) NOT NULL DEFAULT '제목없음',
+-- PRIMARY KEY(`seq`));
+
+-- 업데이트가 되었을때 시간도 입력할 수 있다  ON UPDATE
+-- ALTER TABLE maplestory.like MODIFY createDate TIMESTAMP DEFAULT NOW() ON UPDATE NOW();
