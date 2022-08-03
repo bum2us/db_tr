@@ -54,7 +54,7 @@ WHERE seq = 7;
 -- 셀렉트 IS NULL
 -- SELECT * FROM maplestory.member2 WHERE nickname IS null
 
--- 값이 비어있을경우에 대비해 디폴트 값을 설정할 수 있다.
+-- 값이 비어있을경우에 대비해 디폴트 값을 설정할 수 있다.board
 -- CREATE TABLE maplestory.post2(
 -- `seq` INT NOT NULL AUTO_INCREMENT,
 --    `createTime` TIMESTAMP NOT NULL DEFAULT NOW(),
