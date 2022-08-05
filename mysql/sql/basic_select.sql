@@ -12,7 +12,7 @@ JOIN maplestory.cc b ON b.groupSeq = a.seq;
 -- ,a.title
 -- ,a.createDate
 -- ,b.name
--- FROM maplestory.post a
+-- FROM maplestory.post apost
 -- left join maplestory.image b on b.postId = a.seq;
 -- inner join maplestory.image b on b.postId = a.seq;
 -- join maplestory.post b on b.writer = a.seq; 
