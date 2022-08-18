@@ -44,3 +44,4 @@ use maplestory;
 -- WHERE memberId = 3
 -- ORDER BY addDate DESC;
 
+
