@@ -33,7 +33,7 @@ PRIMARY KEY(`seq`))
 -- 컬럼 변경
 -- ALTER TABLE maplestory.member2 MODIFY COLUMN nickname VARCHAR(100);
 
--- 컴럼 이름 변경
+-- 컴럼 이름 변경comment
 -- ALTER TABLE maplestory.member2 CHANGE COLUMN nickname nick VARCHAR(45);
 
 -- 컬럼 삭제

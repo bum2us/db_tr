@@ -4,10 +4,32 @@ use maplestory;
 -- SELECT
 -- 	a.seq
 --     ,a.groupName
+--     ,b.seq as codeSeq
 -- 	,b.codeKey
 --     ,b.codeName
 -- FROM maplestory.ccg a
 -- JOIN maplestory.cc b ON b.groupSeq = a.seq;
+
+-- SELECT
+-- 	a.seq
+--     ,a.groupName
+--     ,count(b.groupSeq) as codeCount
+-- FROM maplestory.ccg a
+-- JOIN maplestory.cc b ON b.groupSeq = a.seq
+-- GROUP BY b.groupSeq;
+
+SELECT DISTINCT
+	a.seq
+    ,a.groupName
+    ,(
+    SELECT 
+		COUNT(groupSeq)
+    FROM cc 
+    WHERE groupSeq = a.seq
+	)AS codeCount
+FROM ccg a
+JOIN cc b ON b.groupSeq = a.seq;
+
 
 -- 로그인
 -- SELECT
